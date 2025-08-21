@@ -2,6 +2,20 @@
 
 import { useEffect, useState } from 'react';
 
+interface TelegramWebApp {
+  ready(): void;
+  expand(): void;
+  close(): void;
+  initDataUnsafe?: {
+    user?: TelegramUser;
+  };
+  MainButton: {
+    text: string;
+    show(): void;
+    onClick(callback: () => void): void;
+  };
+}
+
 interface TelegramUser {
   id: number;
   first_name: string;
@@ -10,12 +24,20 @@ interface TelegramUser {
   photo_url?: string;
 }
 
+declare global {
+  interface Window {
+    Telegram?: {
+      WebApp: TelegramWebApp;
+    };
+  }
+}
+
 export default function Home() {
   const [user, setUser] = useState<TelegramUser | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const tg = (window as any).Telegram?.WebApp;
+    const tg = window.Telegram?.WebApp;
     if (tg) {
       tg.ready();
       tg.expand();
