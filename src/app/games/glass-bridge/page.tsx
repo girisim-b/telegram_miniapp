@@ -201,7 +201,7 @@ export default function GlassBridge() {
                           {glass.isBroken && (
                             <div className="text-xl">💥</div>
                           )}
-                          {!glass.isBroken && !playerPosition.row === rowIndex && (
+                          {!glass.isBroken && !(playerPosition.row === rowIndex && playerPosition.side === side) && (
                             <div className="text-xs">
                               {side === 'left' ? 'L' : 'R'}
                             </div>
