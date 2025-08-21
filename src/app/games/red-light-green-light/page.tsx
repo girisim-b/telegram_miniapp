@@ -9,7 +9,6 @@ export default function RedLightGreenLight() {
   const [timeLeft, setTimeLeft] = useState(30);
   const [score, setScore] = useState(0);
   const [isMoving, setIsMoving] = useState(false);
-  const gameRef = useRef<HTMLDivElement>(null);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   const startGame = () => {
@@ -106,7 +105,7 @@ export default function RedLightGreenLight() {
             <div className="bg-gray-900 p-6 rounded-xl border border-gray-700">
               <h2 className="text-xl font-bold mb-4">OYUN KURALLARI</h2>
               <div className="text-left space-y-2 text-sm">
-                <p>• Yeşil ışık yanınca "İLERLE" butonuna bas</p>
+                <p>• Yeşil ışık yanınca &quot;İLERLE&quot; butonuna bas</p>
                 <p>• Kırmızı ışık yanınca hareketi DURDUR</p>
                 <p>• Kırmızı ışıkta hareket edersen ELENİRSİN</p>
                 <p>• 30 saniye içinde bitiş çizgisine ulaş</p>

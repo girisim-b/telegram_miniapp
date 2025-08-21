@@ -130,8 +130,8 @@ export default function TugOfWar() {
               <div className="text-left space-y-2 text-sm">
                 <p>• Ekrana hızlıca dokunarak güç topla</p>
                 <p>• Rakibini kendi tarafına çek</p>
-                <p>• 60 saniye içinde %80'e ulaş</p>
-                <p>• Rakip seni %20'ye çekerse kaybedersin</p>
+                <p>• 60 saniye içinde %80&apos;e ulaş</p>
+                <p>• Rakip seni %20&apos;ye çekerse kaybedersin</p>
                 <p>• Hızlı dokunma daha çok güç verir</p>
               </div>
             </div>
