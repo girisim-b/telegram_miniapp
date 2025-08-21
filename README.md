@@ -1,14 +1,21 @@
-# Telegram Mini App
+# 🎮 Squid Game Telegram Mini App
 
-Modern Telegram Mini App built with Next.js, TypeScript, and Tailwind CSS.
+Telegram üzerinden oynayabileceğin hayatta kalma oyunları! Next.js, TypeScript, ve Tailwind CSS ile geliştirildi.
 
-## Features
+## 🎯 Oyunlar
 
-- 🎨 Modern glassmorphism UI design
-- 📱 Responsive mobile-first design
-- 🔐 Telegram user authentication
-- ⚡ Fast performance with Next.js
-- 🎯 TypeScript for type safety
+- 🚦 **Red Light, Green Light**: Yeşil ışıkta hareket et, kırmızıda dur!
+- 🪢 **Tug of War**: Hızlı dokunarak rakibini yen!
+- 🌉 **Glass Bridge**: Doğru camı seçerek karşıya geç!
+
+## ✨ Özellikler
+
+- 🎭 Squid Game teması ve atmosferi
+- 🏆 Gerçek zamanlı lider tablosu
+- 📊 Oyuncu istatistikleri (#001-456 arası numara)
+- 📱 Mobil-friendly tasarım
+- ⚡ Hızlı ve responsive performans
+- 🎯 TypeScript ile tip güvenliği
 
 ## Getting Started
 
